@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_df8my"]
+
+[node name="Car" type="VehicleBody3D" unique_id=1415947630]
+mass = 1200.0
+script = ExtResource("1_df8my")
+vehicle_name = "السيارة"
+visual_path = "res://assets/models/vehicles/sedan.glb"
+wheel_positions = Array[Vector3]([Vector3(-0.78, 0.42, -1.15), Vector3(0.78, 0.42, -1.15), Vector3(-0.78, 0.42, 1.15), Vector3(0.78, 0.42, 1.15)])
+front_wheel_indices = Array[int]([0, 1])

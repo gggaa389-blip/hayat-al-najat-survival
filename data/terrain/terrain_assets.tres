@@ -1,0 +1,71 @@
+[gd_resource type="Terrain3DAssets" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/grass_albedo.png" id="1_ut1gc"]
+[ext_resource type="Texture2D" path="res://assets/textures/grass_normal.png" id="2_6e1al"]
+[ext_resource type="Texture2D" path="res://assets/textures/sand_albedo.png" id="3_gbjp4"]
+[ext_resource type="Texture2D" path="res://assets/textures/sand_normal.png" id="4_y857b"]
+[ext_resource type="Texture2D" path="res://assets/textures/dirt_albedo.png" id="5_cx40s"]
+[ext_resource type="Texture2D" path="res://assets/textures/dirt_normal.png" id="6_oe57p"]
+[ext_resource type="Texture2D" path="res://assets/textures/rock_albedo.png" id="7_skrwb"]
+[ext_resource type="Texture2D" path="res://assets/textures/rock_normal.png" id="8_81hjr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6m73"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_joh7e"]
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_q6m73")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_isrjm"]
+name = "grass"
+albedo_texture = ExtResource("1_ut1gc")
+normal_texture = ExtResource("2_6e1al")
+normal_depth = 1.0
+uv_scale = 0.25
+detiling_rotation = 0.1
+detiling_shift = 0.25
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_rpicd"]
+name = "sand"
+id = 1
+albedo_texture = ExtResource("3_gbjp4")
+normal_texture = ExtResource("4_y857b")
+normal_depth = 1.0
+uv_scale = 0.25
+detiling_rotation = 0.1
+detiling_shift = 0.25
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_vs7kt"]
+name = "dirt"
+id = 2
+albedo_texture = ExtResource("5_cx40s")
+normal_texture = ExtResource("6_oe57p")
+normal_depth = 1.0
+uv_scale = 0.25
+detiling_rotation = 0.25
+detiling_shift = 0.25
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_vhphe"]
+name = "rock"
+id = 3
+albedo_texture = ExtResource("7_skrwb")
+normal_texture = ExtResource("8_81hjr")
+normal_depth = 1.0
+uv_scale = 0.25
+detiling_rotation = 0.25
+detiling_shift = 0.25
+
+[resource]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_joh7e")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_isrjm"), SubResource("Terrain3DTextureAsset_rpicd"), SubResource("Terrain3DTextureAsset_vs7kt"), SubResource("Terrain3DTextureAsset_vhphe")])

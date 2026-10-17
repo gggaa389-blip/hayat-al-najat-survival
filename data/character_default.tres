@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="CharacterConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/character_config.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+model_path = "res://assets/models/character/Knight.glb"
+display_name = "الناجي"
+model_scale = 1.0
+height = 1.8
+radius = 0.35
+walk_speed = 3.2
+run_speed = 6.4
+jump_velocity = 4.6
+acceleration = 12.0
+turn_speed = 10.0
+weapon_model_path = "res://assets/models/weapon/shotgun.glb"
+hand_bone = "handslot.r"
+weapon_grip = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+anim_idle = "Idle"
+anim_walk = "Walking_A"
+anim_run = "Running_A"
+anim_jump_start = "Jump_Start"
+anim_jump_loop = "Jump_Idle"
+anim_jump_land = "Jump_Land"
+anim_sit_down = "Sit_Chair_Down"
+anim_sit_idle = "Sit_Chair_Idle"
+anim_sit_up = "Sit_Chair_StandUp"
+anim_sleep_down = "Lie_Down"
+anim_sleep_idle = "Lie_Idle"
+anim_sleep_up = "Lie_StandUp"
+anim_carry_idle = "2H_Melee_Idle"
+anim_aim = "2H_Ranged_Aiming"
+anim_shoot = "2H_Ranged_Shooting"
+anim_reload = "2H_Ranged_Reload"
+anim_interact = "Interact"
+anim_pickup = "PickUp"
+anim_wave = "Cheer"
+anim_hurt = "Hit_A"
+anim_death = "Death_A"
+blend_time = 0.22

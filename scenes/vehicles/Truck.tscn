@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_umhdg"]
+
+[node name="Truck" type="VehicleBody3D" unique_id=352395693]
+mass = 3400.0
+script = ExtResource("1_umhdg")
+vehicle_name = "الشاحنة"
+visual_path = "res://assets/models/vehicles/delivery.glb"
+visual_scale = 1.45
+body_size = Vector3(2.25, 2.3, 4.8)
+body_offset = Vector3(0, 1.25, 0)
+engine_power = 11500.0
+brake_power = 55.0
+max_steer = 0.36
+wheel_radius = 0.52
+wheel_positions = Array[Vector3]([Vector3(-0.85, 0.52, -1.75), Vector3(0.85, 0.52, -1.75), Vector3(-0.85, 0.52, 1.55), Vector3(0.85, 0.52, 1.55)])
+front_wheel_indices = Array[int]([0, 1])
+fuel_max = 160.0
+fuel = 160.0
+fuel_consumption = 1.9
+seat_offset = Vector3(0.62, 1.75, -1.5)
+camera_length = 7.2
+has_cargo = true
